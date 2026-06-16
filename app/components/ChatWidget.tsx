@@ -5,7 +5,7 @@ import { MessageSquare, X, Send } from "lucide-react";
 const BRIDGE_URL = "https://aclementchat.easyappz.com/chat";
 const AGENT_NAME = "Augustine Clement Assistant";
 const GREETING =
-    "Hello! Welcome to Augustine Clement Solicitors! 👋 I'm Clem, your AI assistant. How can I help you today?";
+    "Hello! Welcome to Augustine Clement Solicitors!👋. I'm Clem, your virtual receptionist. I can help with information about our Family Law and Civil Litigation services. How can I assist you today?";
 
 const BOT_AVATAR =
     "https://www.shutterstock.com/image-vector/happy-robot-3d-ai-character-600nw-2464455965.jpg";
@@ -272,6 +272,9 @@ export function ChatWidget() {
                     <div ref={messagesEndRef} />
                 </div>
 
+                {/* ── Disclaimer ── */}
+                <div id="cm-chat-disclaimer" className="text-center py-1.5 bg-white text-[11px] text-gray-500 border-t border-gray-200">⚖️ This assistant provides general information only and does not constitute legal advice.</div>
+
                 {/* ── Input area ── */}
                 <div className="px-3.5 py-3 bg-white border-t border-gray-200 flex gap-2 items-end shrink-0">
                     <textarea
@@ -298,12 +301,12 @@ export function ChatWidget() {
                 <div className="text-center py-1.5 bg-white text-[11px] text-gray-500 border-t border-gray-200">
                     Powered by{" "}
                     <a
-                        href="https://trostechnologies.com"
+                        href="https://optimizewithai.net/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gold no-underline hover:underline"
                     >
-                        Tros Technologies
+                        OptimizewithAI
                     </a>
                 </div>
             </div>
